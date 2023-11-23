@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .submit-button {
+            text-align: center;
+        }
+
+        /* Add more CSS styling as needed */
+    </style>
+    <title>Application Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form action="ApplicationsServlet" method="post">
+        <div class="section">
+            <h2>Personal Information</h2>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="address">Permanent Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality">
+        </div>
+
+        <!-- Academic Details Section -->
+        <div class="section">
+            <h2>Academic Details</h2>
+            <label for="course">Course/Program Enrolled:</label>
+            <input type="text" id="course" name="course">
+
+            <label for="university">College/University Name:</label>
+            <input type="text" id="university" name="university">
+
+            <label for="roll_number">Roll/Registration Number:</label>
+            <input type="text" id="roll_number" name="roll_number">
+
+            <label for="year_semester">Year/Semester of Study:</label>
+            <input type="text" id="year_semester" name="year_semester">
+        </div>
+
+        <!-- Emergency Contact Section -->
+        <div class="section">
+            <h2>Emergency Contact</h2>
+            <label for="emergency_contact_name">Name of Emergency Contact:</label>
+            <input type="text" id="emergency_contact_name" name="emergency_contact_name">
+
+            <label for="relationship">Relationship to Applicant:</label>
+            <input type="text" id="relationship" name="relationship">
+
+            <label for="emergency_phone">Emergency Contact Phone Number:</label>
+            <input type="tel" id="emergency_phone" name="emergency_phone">
+        </div>
+
+        <!-- Room Preference Section -->
+        <div class="section">
+            <h2>Room Preference</h2>
+            <label for="room_type">Room Type:</label>
+            <select id="room_type" name="room_type">
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Shared">Shared</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="roommate_requests">Any Specific Roommate Requests:</label>
+            <textarea id="roommate_requests" name="roommate_requests" rows="4"></textarea>
+        </div>
+
+        <!-- Medical Information Section -->
+        <div class="section">
+            <h2>Medical Information</h2>
+            <label for="medical_conditions">Any Medical Conditions/Allergies:</label>
+            <textarea id="medical_conditions" name="medical_conditions" rows="4"></textarea>
+
+            <label for="emergency_medical_contact">Emergency Medical Contact Information:</label>
+            <input type="text" id="emergency_medical_contact" name="emergency_medical_contact">
+        </div>
+
+        <!-- Dietary Preferences/Restrictions Section -->
+        <div class="section">
+            <h2>Dietary Preferences/Restrictions</h2>
+            <label for="dietary_restrictions">Any Food Allergies or Dietary Restrictions:</label>
+            <textarea id="dietary_restrictions" name="dietary_restrictions" rows="4"></textarea>
+        </div>
+
+        <!-- Previous Hostel Experience Section -->
+        <div class="section">
+            <h2>Previous Hostel Experience (if applicable)</h2>
+            <label for="previous_hostel_name">Previous Hostel Name:</label>
+            <input type="text" id="previous_hostel_name" name="previous_hostel_name">
+
+            <label for="stay_duration">Duration of Stay:</label>
+            <input type="text" id="stay_duration" name="stay_duration">
+        </div>
+
+        <!-- Additional Comments/Notes Section -->
+        <div class="section">
+            <h2>Additional Comments/Notes</h2>
+            <label for="additional_notes">Any other information:</label>
+            <textarea id="additional_notes" name="additional_notes" rows="4"></textarea>
+        </div>
+
+        <div class="submit-button">
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

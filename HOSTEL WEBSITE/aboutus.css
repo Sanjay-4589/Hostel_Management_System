@@ -1,0 +1,174 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    /* background-image: url('book.jpg'); */
+    /* background-color:antiquewhite; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.material-symbols-outlined{
+    display: inline-block;
+    color:black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.menu{
+    height: 350px;
+    width: 200px;
+    top: 40px;
+    background-color: black;
+    border: 2px solid black;
+    position: absolute;
+    left: -200px;
+}
+.icon a{
+    /* margin-left: 20px; */
+    top: 20px;
+    line-height: 50px;
+    color:white;
+    text-decoration: none;
+    /* display: block; */
+}
+.icon li:hover{
+    
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9);
+    /* font-size: 18px; */
+}
+#check:checked~.menu{
+    left: 0px;
+}
+#check{
+    opacity: 0;
+}
+/* img{
+    padding: 8px 10px 0px 0px;
+    margin: 0 auto;
+    margin-left: 200px;
+    display: table;
+    float: left;
+    width: 88px !important;
+    height: auto;
+    padding-right: 10px;
+    padding-top: 8px;
+} */
+.header{
+    display: flex;
+    color: black;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:aliceblue;
+    /* text-align: center; */
+}
+.header img{
+    height: 5rem;
+    width: 5rem;
+    margin: 2rem 1rem 2rem 5rem;
+}
+#h2{
+    width: 100vw;
+    text-align: center;
+    color: blueviolet;
+}
+#bg{
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 300px;
+    height: 300;
+    align-items: center;
+}
+.para{
+    width: 100vw;
+    line-height: 25px; 
+    font-size: 20px;
+    color:black;
+    /* text-align: justify; */
+}
+.table{
+  margin: auto;
+  width: 100vh;
+  background-color:rgba(0,0,100,0.2);
+}
+.mission{
+    font-size: 20px;
+}
+
+
+.end{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialicons a i{
+    font-size: 2rem;
+    color: #111;
+    opacity: 0.9;
+}
+/* Hover Effects on social media Icons */
+.socialicons a:hover {
+    background-color:black;
+    transition: 0.5s;
+}
+.socialicons a:hover i{
+    background-color:white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+    color: white;
+}
+.footerbottom{
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+.footerContainer{
+    opacity: 0.2;
+}
